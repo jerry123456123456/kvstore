@@ -1,10 +1,10 @@
 
 CC = gcc
-FLAGS = -I ./NtyCo/core/ -L ./NtyCo/ -lntyco -lpthread -luring -ldl
+FLAGS = -I ./Ntyco/core/ -L ./Ntyco/ -lntyco -lpthread -luring -ldl
 SRCS = kvstore.c ntyco.c proactor.c kvs_array.c kvs_rbtree.c kvs_hash.c
 TESTCASE_SRCS = testcase.c
 TARGET = kvstore
-SUBDIR = ./NtyCo/
+SUBDIR = ./Ntyco/
 TESTCASE = testcase
 
 OBJS = $(SRCS:.c=.o)
